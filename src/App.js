@@ -47,19 +47,22 @@ function App() {
         <div className="TitleBg">
           <h1>Allaisa Soriano's Activity</h1>
         </div>
-        <div className ="Buttons"> 
-          <NumberInput value={first} onChange={handleFirstChange} placeholder="First number" />
-          <NumberInput value={second} onChange={handleSecondChange} placeholder="Second number" />
-        </div>
-        <div className="Operations">
-          <Button onClick={() => handleOperations('addition')}>Add</Button>
-          <Button onClick={() => handleOperations('subtraction')}>Subtract</Button>
-          <Button onClick={() => handleOperations('multiply')}>Multiply</Button>
-          <Button onClick={() => handleOperations('divide')}>Divide</Button>
-
+        <div className="ContentContainer">
+          <div className="NumberInputs">
+            <NumberInput value={first} onChange={handleFirstChange} placeholder="First number" />
+            <NumberInput value={second} onChange={handleSecondChange} placeholder="Second number" />
+          </div>
+          <div className="Operations">
+            <Button onClick={() => handleOperations('addition')}>Add</Button>
+            <Button onClick={() => handleOperations('subtraction')}>Subtract</Button>
+            <Button onClick={() => handleOperations('multiply')}>Multiply</Button>
+            <Button onClick={() => handleOperations('divide')}>Divide</Button>
+          </div>
         </div>
         <h1>Answer is: {result}</h1>
       </div>
+
+
     </>
   );
 }
