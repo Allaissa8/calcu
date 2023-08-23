@@ -19,6 +19,9 @@
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
   },
+  "homepage":{
+    "https://allaissa8.github.io/calcu/"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
