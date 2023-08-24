@@ -44,14 +44,15 @@ function App() {
   return (
     <>
       <div className="App">
-        <div className="TitleBg">
-          <h1>Allaisa Soriano's Activity</h1>
-        </div>
-        <div className="ContentContainer">
+        <div className="container">
+          <div className="titleContainer">
+            <h1 className="titleText">React Calculator</h1>
+          </div>
           <div className="NumberInputs">
             <NumberInput value={first} onChange={handleFirstChange} placeholder="First number" />
             <NumberInput value={second} onChange={handleSecondChange} placeholder="Second number" />
           </div>
+          <h1>Answer is: {result}</h1>
           <div className="Operations">
             <Button onClick={() => handleOperations('addition')}>Add</Button>
             <Button onClick={() => handleOperations('subtraction')}>Subtract</Button>
@@ -59,7 +60,7 @@ function App() {
             <Button onClick={() => handleOperations('divide')}>Divide</Button>
           </div>
         </div>
-        <h1>Answer is: {result}</h1>
+
       </div>
 
 
